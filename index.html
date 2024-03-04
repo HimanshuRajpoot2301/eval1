@@ -4,10 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluation</title>
+    <style>
+        body{
+           background: linear-gradient(#f69d3c, #3f87a6);
+        }
+        .alter{
+        margin: auto;
+        padding: 20px;
+        }
+        #box{
+            background-color: whitesmoke;
+            width: 50vh;
+            height: 100%;
+            border: 0px;
+            padding: 2px;
+            margin: auto;
+        }
+        .radio-group{
+            display: flex;
+        }
+        .radio-group label{
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
+    <div id="box">
+        <form action="" method="get" class="form-example">
+  <div class="alter">
+    <label for="email"><b>Email:</b> </label>
+    <input type="email" name="email" id="email" required placeholder="Work Email"/>
+  </div>
+   <div class="alter">
+  <label for="pass"><b>Password (8 characters minimum):</b></label>
+  <input type="password" id="pass" name="password" minlength="8" required />
+</div>
+<div >
+<label style="text-align: start;" for="message"><b>Message:</b></label>
+
+<textarea id="message" name="message" rows="5" cols="33">
+Write Here...
+</textarea>
+</div>
+<div>
+    <label for="Website Rating"><b>Website Rating:</b></label>
+    
+    <span><input type="radio" id="Excellent" name="drone" value="Excellent" checked />
+    <label for="Excellent"><b>Excellent</b></label></span>
+ 
+
+  
+   <span><input type="radio" id="Good" name="drone" value="Good" checked />
+    <label for="Good"><b>Good</b></label></span>
+
+
+  
+    <span><input type="radio" id="Average" name="drone" value="Average" checked />
+    <label for="Average"><b>Average</b></label></span>
+  
+    <span><input type="radio" id="Poor" name="drone" value="Poor" checked />
+    <label for="Poor"><b>Poor</b></label></span>
+  
+</div>
+<div class="alter">
+  <label for="Age"><b>Age(10-100):</b></label>
+  <input type="number" id="Age" name="Age" minlength="10" maxlength="100" required />
+</div>
+<div class="alter">
+  <label for="URL"><b>Website URL(optional):</b></label>
+  <input type="URL" id="URL" name="URL" minlength="5"  />
+</div>
+<div class="alter">
+    <input type="checkbox" id="terms" name="terms" checked />
+    <label for="terms"><b>I agree to the terms and conditions</b></label>
+  </div>
+
+  <div>
+  <div style="display: flex;">
+    <input type="submit" value="Submit" />
+  </div>
+</form>
     </div>
 </body>
 </html>
